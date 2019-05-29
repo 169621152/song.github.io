@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding: 0;
+    font-size:13px;
+    color:#666;
+    font-family:"Microsoft Yahei", Verdana, Arial;
+}
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+#warp{
+    width:100%;
+    height:auto;
+    background:#fff;
+}
+
+#content{
+    width:100%;
+    height:auto;
+}
+
+#content .naver{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    height:170px;
+    width:100%;
+    background: #ddd url(images/background.png);
+}
+
+#content .naver .auxiliary{
+    width:0px;
+    flex-grow: 3;
+    height:100%;
+}
+
+#content .naver .main{
+    position: relative;
+    width:0px;
+    flex-grow: 4;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* background:teal; */
+}
+#content .naver .main .nav{
+    width:0px;
+    flex-grow:1; 
+    height:100%;
+    position: relative;
+}
+#content .naver .main .nav a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+#content .naver .main .nav a span:nth-of-type(1){
+    writing-mode:tb-rl;
+    font-size:18px;
+    line-height:20px;
+    margin:0 5px;
+}
+#content .naver .main .nav a span:nth-of-type(2){
+    writing-mode:tb-rl;
+    font-size:12px;
+}
+
+#content .naver .main .image{
+    margin:5px 0;
+    width:50px;
+    height:10px;
+    background:#000;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+
+#content .homeimg{
+    width:100%;
+    height:400px;
+    background: url(images/版面图.jpg) no-repeat;
+    background-size:100% 100%;
+}
+
+
+
+#personage{
+    width:auto;
+    height:480px;
+    overflow: hidden;
+    margin:15px 0;
+    /* border-bottom:1px solid #ddd; */
+    padding: 2%;
+    background: #ddd url(images/background.png);
+}
+.title{
+    text-align: center;
+}
+.title .china{
+    font-size:20px;
+    font-weight:500;
+    margin:8px 0;    
+}
+.title  .am{
+    display: inline-block;
+    font-size:18px;
+    border-bottom:1px solid #000;
+    color:#000;
+    padding: 7px 20px;
+}
+
+#content2{
+    width:85%;
+    height:100%;
+    padding: 1% 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#content2 .characters{
+    width:0px;
+    height:100%;
+    flex-grow: 2;
+    text-align: left;
+}
+#content2 .characters .chara{
+    height:auto;
+    width:auto;
+    padding:0 2%;
+}
+#content2 .characters .chara h2{
+    margin:15px 0 0;
+    font-size:18px;
+    color:#666;
+    line-height:23px;
+    text-align: left;
+    text-indent: 2em;
+}
+#content2 .characters .chara h3{
+    text-indent: 2em;
+    display: inline-block;
+    max-width: 500px;
+    font-size:14px;
+    color:#222;
+    font-weight:500;
+    margin: 15px 0;
+    padding:1.5% 0;
+    line-height:33px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:7;
+    -webkit-box-orient:vertical;
+}
+#content2 .characters .chara span{
+    font-size:16px;
+    color:#666;
+    display: block;
+}
+#content2 .characters .chara p:nth-of-type(1){
+    margin-top:15px;
+}
+#content2 .characters .chara p{
+    line-height:22px;
+    text-align: left;
+}
+#content2 .characters .chara p::before{
+    content:"";
+    display: inline-block;
+    width:5px;
+    height:5px;
+    border-radius:2.5px;
+    background:#666;
+    vertical-align:middle;
+    margin:0 5px;
+}
+
+#content2 .im{
+    width:0px;
+    height:100%;
+    flex-grow: 2.5;
+    text-align: center;
+}
+#content2 .im .im1{
+    height:100%;
+}
+#content2 .im .im1 img{
+    width:80%;
+    height:80%;
+}
+
+
+
+#content3{
+    width:85%;
+    height:auto;
+    padding: 2% 7.5%;
+    overflow: hidden;
+}
+#production{
+    width:100%;
+    height:auto;
+    margin:15px 0;
+    border-bottom:1px solid #ddd;
+    text-align: center;
+}
+#content3 .images1{
+    width:100%;
+    height:250px;
+    margin:1%;
+}
+#content3 .images1 img{
+    width:45%;
+    height:100%;
+    margin:0% 2%;
+}
+#content3 .images2{
+    width:100%;
+    height:300px;
+    margin:2% 0 5%;
+}
+#content3 .images2 img{
+    height:100%;
+    width:90%;
+    margin: 1%;
+}
+
+#content3 .images3{
+    width:90%;
+    height:450px;
+    margin:1%;
+    text-align: center;
+    display: flex;
+    margin:0 auto;
+    flex-wrap: wrap;
+}
+#content3 .images3 .left img{
+    width:100%;
+    height:100%;
+}
+#content3 .images3 .left{
+    width: 0px;
+    height:100%;
+    flex-grow: 6;
+    margin: 0 15px 0 0px;
+}
+#content3 .images3 .right{
+    width:0px;
+    height:100%;
+    flex-grow: 15;
+}
+#content3 .images3 .right img{
+    width:45%;
+    height:48%;
+    margin:1% 2%;
+}
+
+
+
+
+#contact{
+    height:auto;
+    overflow: hidden;
+    margin:15px 0 0;
+    /* border-bottom:1px solid #ddd; */
+    padding: 2%;
+    background: #ddd url(images/background.png);
+    /* padding-bottom:5%;  */
+}
+
+#contact .characters{
+    width:auto;
+    height:100%;
+    display: inline-block;
+}
+#contact .characters .main{
+    margin: 0 auto;
+    width:auto;
+    height:auto;
+}
+
+#contact .characters .main p{
+    /* letter-spacing:8px; */
+}
+#contact .characters .main i{
+    display: inline-block;
+    width:32px;
+    height:32px;
+    vertical-align:middle;
+}
+#contact .characters .main  p:nth-of-type(1) i{
+    background:url(images/地址.png)
+}
+#contact .characters .main p:nth-of-type(2)  i{
+    background:url(images/电话.png)
+}
+#contact .characters .main p:nth-of-type(3)  i{
+    background:url(images/邮箱.png)
+}
+#contact .characters .main p:nth-of-type(4)  i{
+    background:url(images/技术服务.png)
+}
+#contact .characters .main p span{
+    letter-spacing:1px;
+    line-height:40px;
+    font-weight:500;
+    color:#222;
+    font-size:14px;
+}
+#contact  .im{
+    width:auto;
+    height:100%;
+    padding-left:10%;
+    display: inline-block;
+}
+#contact  .im img{
+    width:100%;
+    height:100%;
+}
+#contact .content4{
+    width:85%;
+    height:90%;
+    padding: 1% 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
