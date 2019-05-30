@@ -1,9 +1,4 @@
 
-    wow = new WOW({
-        animateClass: 'animated',
-    });
-    wow.init();
-
 
     //获取body对象
     let body = document.body;
@@ -66,3 +61,12 @@
         //     cross.style.left  = navsl -crossl +"px";
         // }
     }
+
+
+
+    
+    wow = new WOW({
+        animateClass: 'animated',
+    });
+    wow.init();
+
