@@ -98,23 +98,53 @@
                     <p class="china wow fadeInUp">作品欣赏</p>
                 </div>
                 <div id="content3">
+                    <div class="slide1">
+                        <div class="swiper-container" style="height:32%;display:flex;align-items: center;">
+                            <!-- <p style="font-size:25px;color:#000;line-height:38px;">字画欣赏</p> -->
+                            <div class="swiper-wrapper" style="height:100%;">
+                            <div class="swiper-slide"> <img style="width:90%;height:100%;" src="images/chara1.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="width:90%;height:100%;" src="images/chara2.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;width:90%;" src="images/chara11.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="width:80%;height:100%;" src="images/chara5.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="width:80%;height:100%;" src="images/chara6.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="width:80%;height:100%;" src="images/chara8.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="width:80%;height:100%;" src="images/chara9.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="width:80%;height:100%;" src="images/chara10.jpg" alt=""> </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="swiper-container" style="height:32%; margin:15px 0;">
+                            <div class="swiper-wrapper" style="height:100%;">
+                           
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional1.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional2.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional3.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional4.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional5.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional6.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional9.jpg" alt=""> </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="swiper-container" style="height:32%; margin:15px 0;">
+                            <div class="swiper-wrapper" style="height:100%;">
+                           
+                            <div class="swiper-slide"> <img style="height:100%;width:100%" src="images/chara3.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/chara4.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/chara7.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional7.jpg" alt=""> </div>
+                            <div class="swiper-slide"> <img style="height:100%;" src="images/tranditional8.png" alt=""> </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
 
-                    <img class="wow lightSpeedIn" src="images/chara1.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/chara2.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/chara3.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/chara5.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/chara6.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/chara4.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/chara7.jpg" alt="">
-                    
-
-                    <img class="wow lightSpeedIn" src="images/tranditional1.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/tranditional2.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/tranditional3.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/tranditional4.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/tranditional6.jpg" alt="">
-                    <img class="wow lightSpeedIn" src="images/tranditional5.jpg" alt="">
-                    
                 </div>
             </div>
         </div>
@@ -159,5 +189,37 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="index.js"></script>
-
+<script language="javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+    autoplay: true, //可选选项，自动滑动
+    
+    initialSlide: 0, //初始化的轮播显示图为第三个
+    direction: 'horizontal', //横向切换 竖向切换为vertical
+    preventClicks: false, //防止触摸的时候触发点击事件 
+    // preventInteractionOnTransition: true, //切换时滑动无效 直接切换结束
+    //virtualTranslate : true, //让轮播锁定 分页器动 图片不动
+    speed: 700, //过渡效果时间
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+    // parallax: true, //看不懂 没啥感觉
+    navigation: { //上下切换按钮
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+    el: '.swiper-pagination', //获取的是哪个class
+    clickable: true, //添加这个之后可以点击分页器切换
+    },
+    //切换效果
+    })
+    mySwiper.el.onmouseover = function () { //鼠标经过停止自动轮播
+mySwiper.autoplay.stop();
+}
+mySwiper.el.onmouseout = function () { //鼠标经过开始自动轮播
+mySwiper.autoplay.start();
+}
+    </script>
+    
 </html>
